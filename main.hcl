@@ -22,4 +22,13 @@ resource "lab" "main" {
       show_stop = true
     }
   }
+  content {
+    chapter "__default" {
+      title = "Default"
+      page "customize-your-web-browser" {
+        title     = "customize your web browser"
+        reference = resource.page.customize-your-web-browser
+      }
+    }
+  }
 }
